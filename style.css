@@ -1,0 +1,127 @@
+html {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+}
+
+.card {
+  margin: 10% 5%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.card img {
+  border-radius: 20px 20px 0 0;
+  max-width: 100%;
+}
+
+.card p {
+  padding: 0 10%;
+  color: hsl(224, 23%, 55%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  margin: 0 7.5%;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  padding: 1% 5%;
+}
+
+.price .music-icon {
+  display: flex;
+  align-items: center;
+  flex-basis: 20%;
+}
+
+.price .music-icon img {
+  width: 100%;
+}
+
+.price .pricing {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+.price .pricing p:first-child {
+  margin-bottom: 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+.price .pricing p:last-child {
+  margin-top: 3%;
+}
+
+.price a {
+  flex-basis: 30%;
+}
+
+.btn-payment,
+.btn-cancel {
+  width: 85%;
+  height: 12.5vw;
+  background-color: hsl(245, 75%, 52%);
+  margin: 0 7.5%;
+  padding: 2.5%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  margin: 2.5% 0;
+}
+
+.btn-payment:hover {
+  background-color: #766cf1;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .card p {
+    padding: 0 10%;
+  }
+
+  .card .music-icon img {
+    width: 80%;
+  }
+
+  .btn-payment,
+  .btn-cancel {
+    height: 3vw;
+  }
+
+  .btn-cancel {
+    margin: 5% 0;
+  }
+}
